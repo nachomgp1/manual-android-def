@@ -1,12 +1,13 @@
 package com.example.manualnetorange;
 
+import android.widget.Toast;
+
 import org.postgresql.util.PSQLException;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Users {
     private int id;
@@ -33,56 +34,23 @@ public class Users {
 
     public static boolean ValidateCredentials(String username, String password) throws SQLException {
         boolean isValid = false;
-        PostgreSQLConnection connection = new PostgreSQLConnection();
-        connection.connect();
-        String query = "SELECT 1 FROM \"Users\" WHERE username = ? AND password = ?";
+        String query = "SELECT username FROM \"Users\" WHERE username = ? AND password = ?";
 
-        try (PreparedStatement stm = connection.getConnection().prepareStatement(query)) {
-            stm.setString(1, username.trim());
-            stm.setString(2, password.trim());
-            try (ResultSet rs = stm.executeQuery()) {
-                //If there are results credentials are true
-                isValid = rs.next();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                connection.close();
-            }
+        PostgreSQLConnection dbConnection = new PostgreSQLConnection();
+        PreparedStatement stmt;
+        try (Connection connection = dbConnection.connect()) {
+            stmt = connection.prepareStatement(query);
+        }
+        stmt.setString(1, username.trim());
+        stmt.setString(2, password.trim());
+
+        try (ResultSet rs = stmt.executeQuery()) {
+            isValid = rs.next();
+        } catch (SQLException e) {
+            System.err.println("Error validando las credenciales: " + e.getMessage());
 
         }
-        return  isValid;
-    }
-
-    public static List<String> ObtainUsername() throws SQLException {
-        List<String> usernames = new ArrayList<>();
-        PostgreSQLConnection connection = new PostgreSQLConnection();
-        connection.connect();
-        String query = "SELECT username FROM \"Users\" ";
-        ResultSet rs = connection.queryDatabase(query);
-
-        while (rs.next()) {
-            usernames.add(rs.getString("username"));
-        }
-        rs.close();
-        connection.close();
-
-        return usernames;
-    }
-
-    public static List<String> ObtainPassword() throws SQLException {
-        List<String> passwords = new ArrayList<>();
-        PostgreSQLConnection connection = new PostgreSQLConnection();
-        connection.connect();
-        String query = "SELECT password FROM \"Users\" ";
-        ResultSet rs = connection.queryDatabase(query);
-
-        while (rs.next()) {
-            passwords.add(rs.getString("password"));
-        }
-        rs.close();
-        connection.close();
-
-        return passwords;
+        return isValid;
     }
 
     public int getId() {
