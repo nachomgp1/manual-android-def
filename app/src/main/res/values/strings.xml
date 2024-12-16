@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Manual NetOrange</string>
+    <string name="log_in_button">Log In</string>
+    <string name="exit_button">Exit</string>
+    <string name="tittle">NetOrange Manual</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="hint_edittext_username">Enter your username</string>
+    <string name="hint_edittext_password">Enter your password</string>
+    <string name="index_label">Index</string>
+</resources>
