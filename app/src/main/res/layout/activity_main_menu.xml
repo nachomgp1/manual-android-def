@@ -35,6 +35,13 @@
             android:textSize="16sp"
             android:textColor="#fb962b"
             android:layout_marginTop="4dp" />
+        <TextView
+            android:id="@+id/logLabel"
+            android:text="Logged user:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
     </LinearLayout>
 
     <!-- Index Section -->
@@ -70,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="Log in section"
+                android:text="STANDAR USER"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -79,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="FTP section"
+                android:text="GROUP USER"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -88,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="Email section"
+                android:text="ADMINISTRATOR"
                 android:layout_marginBottom="8dp"/>
             <Button
                 android:id="@+id/btnSection4"
@@ -96,7 +103,16 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="User managment section"
+                android:text="SETTINGS"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/btnSection5"
+                android:layout_marginTop="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3E50B4"
+                android:textColor="#FFFFFF"
+                android:text="EXIT"
                 android:layout_marginBottom="8dp">
 
             </Button>
