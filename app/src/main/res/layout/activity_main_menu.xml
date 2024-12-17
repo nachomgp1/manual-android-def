@@ -2,48 +2,126 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainMenuLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
 
+    <!-- Header Layout -->
     <LinearLayout
-        android:id="@+id/tittleLayout"
-        android:layout_width="wrap_content"
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:orientation="horizontal"
         android:paddingTop="20dp">
 
         <TextView
-            android:id="@+id/tittleLabel"
+            android:id="@+id/titleLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tittle">
-        </TextView>
-        <TextView
-            android:id="@+id/logLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:layout_marginStart="60dp">
-        </TextView>
+            android:paddingBottom="8dp"
+            android:text="NetOrange"
+            android:textColor="#3E50B4"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/subtitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User manual"
+            android:textSize="16sp"
+            android:textColor="#fb962b"
+            android:layout_marginTop="4dp" />
     </LinearLayout>
 
+    <!-- Index Section -->
+    <ScrollView
+        android:id="@+id/indexScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/titleLayout"
+        android:layout_above="@id/footerLayout"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/indexLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/indexLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_label"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Menu Buttons -->
+            <Button
+                android:id="@+id/btnSection1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fb962b"
+                android:textColor="#FFFFFF"
+                android:text="Log in section"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSection2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fb962b"
+                android:textColor="#FFFFFF"
+                android:text="FTP section"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSection3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fb962b"
+                android:textColor="#FFFFFF"
+                android:text="Email section"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/btnSection4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fb962b"
+                android:textColor="#FFFFFF"
+                android:text="User managment section"
+                android:layout_marginBottom="8dp">
+
+            </Button>
+
+            <!-- Add more sections as needed -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
     <LinearLayout
-        android:id="@+id/indexLayout"
-        android:layout_width="wrap_content"
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
 
         <TextView
-            android:text="@string/index_label"
+            android:id="@+id/footerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="100dp">
-
-        </TextView>
+            android:text="2024 NetOrange protected rigths"
+            android:textColor="#757575"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </RelativeLayout>
