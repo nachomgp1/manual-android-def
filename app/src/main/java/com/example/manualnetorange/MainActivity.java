@@ -64,16 +64,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String password = edit_txt_password.getText().toString();
 
         if (id == login_btn.getId()) {
-            try {
-                ValidateUser(username, password);
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        }
 
+            OpenMainMenu(username);
+        }
     }
 
-    public void ValidateUser(String username, String password) throws SQLException {
+    public void ValidateUser (String username, String password) throws SQLException {
 
         try {
             boolean isValid = Users.ValidateCredentials(username, password);
@@ -83,16 +79,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else {
                 Toast.makeText(MainActivity.this, "Invalid user or password", Toast.LENGTH_SHORT).show();
             }
-        }
-        catch (SQLException e){
+        } catch (SQLException e) {
             Toast.makeText(MainActivity.this, "Error with database", Toast.LENGTH_SHORT).show();
         }
 
 
-
     }
 
-    public void OpenMainMenu(String username) {
+    public void OpenMainMenu (String username){
         Intent intent = new Intent(MainActivity.this, MainMenu.class);
         intent.putExtra("username", username);
         startActivity(intent);
