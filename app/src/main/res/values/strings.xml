@@ -8,4 +8,6 @@
     <string name="hint_edittext_username">Enter your username</string>
     <string name="hint_edittext_password">Enter your password</string>
     <string name="index_label">Index</string>
+    <string name="inicio_de_sesion">Inicio de Sesion</string>
+    <string name="los_usuarios_est_ndar_tienen_acceso_limitado_a_las_funciones_del_sistema_pueden_visualizar_e_interactuar_con_funcionalidades_b_sicas_pero_no_pueden_modificar_la_configuraci_n_del_sistema">Al ingresar en la sección de correo, encontrarás un botón denominado "Login with Google". Al pulsarlo, se abrirá una ventana en el navegador para iniciar sesión con tu cuenta de Google. Además, hay una flecha que permite regresar al menú principal.</string>
 </resources>
