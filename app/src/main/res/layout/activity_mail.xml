@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="1. Usuario Estándar"
+                    android:text="1. Inicio de Sesion"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -83,27 +83,25 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="2. Usuario Grupo"
+                    android:text="2. Uso de Correo "
                     android:textColor="#757575"
                     android:textSize="16sp" />
-
                 <TextView
-                    android:id="@+id/indexItem3"
+                    android:id="@+id/indexItem2.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
-                    android:padding="8dp"
-                    android:text="3. Administrador"
+                    android:padding="7dp"
+                    android:text="  2.1 Leer  Correo "
                     android:textColor="#757575"
                     android:textSize="16sp" />
-
                 <TextView
-                    android:id="@+id/indexItem4"
+                    android:id="@+id/indexItem2.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
-                    android:padding="8dp"
-                    android:text="4. Configuraciones"
+                    android:padding="7dp"
+                    android:text="  2.2 Enviar Correo "
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -137,7 +135,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Permisos Necesesarios:"
+                    android:text="@string/requisitos_necesesarios"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -146,7 +144,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Visualizar información personal"
+                    android:text="@string/la_cuenta_con_la_que_inicies_sesion_debe_coincidir_con_la_que_esta_registrada_con_su_usuario_de_la_aplicacion"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="4dp"/>
@@ -154,15 +152,83 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Acceder a módulos asignados"
+                    android:text="@string/posser_una_cuenta_de_google"
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo_grafico"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1º-Pincho en el boton de Login with google"
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura_de_pantalla_1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2º-En el navegador eligo la cuenta de correo correcta,tendra que ser la asociada a su usuario , no esta disponible usar el correo de la fundacion "
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="4dp"/>
 
+                <ImageView
+                    android:layout_width="345dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura2" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Enviar solicitudes básicas"
+                    android:text="3º-Nos aparecera un aviso de que no se ha verificado , le doy a configuracion avanzada"
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4º-Y le das a ir a AppCorreo"
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura_4" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5º-Le doy perpisos para que pueda usar los servicios de gmail,y le doy en continuar"
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura5png" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6º-Ya has terminado el inicio de sesion, es posible cerrar la pestaña y continuar en la aplicacion"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="4dp"/>
@@ -179,7 +245,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="2. Uso del Correo"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -188,15 +254,36 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Los usuarios estándar tienen acceso limitado a las funciones del sistema. Pueden visualizar e interactuar con funcionalidades básicas, pero no pueden modificar la configuración del sistema."
+                    android:text="Después de haber iniciado sesión, cargará la bandeja de entrada de correos."
                     android:textColor="#757575"
                     android:textSize="16sp"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Permisos:"
+                    android:text="Al lado de cada correo nos aparecerán dos botones en la columna Actions: uno elimina el correo y otro cambia el estado de Leído o No leído al contrario."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El botón de Refresh recarga la bandeja de entrada, y el botón de Log Out cierra sesión del correo (no de la aplicación)."
+                    android:textColor="#757575"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="221dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura6" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.1 Leer correo"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -205,27 +292,38 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Visualizar información personal"
+                    android:text="Al hacer doble clic sobre un correo, este se abrirá en una nueva pestaña donde se mostrará el contenido completo del correo y los archivos adjuntos organizados en un apartado llamado Attachments. En este apartado, cada archivo tendrá un botón que permitirá descargarlo automáticamente al hacer clic."
                     android:textColor="#757575"
                     android:textSize="16sp"
-                    android:layout_marginBottom="4dp"/>
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.2 Enviar Correo"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Acceder a módulos asignados"
+                    android:text="En la bandeja de entrada, al acceder a la opción Enviar Mail, encontrarás los campos necesarios para completar el envío de un mensaje. El campo Para corresponde al destinatario del correo, quien debe estar incluido en la lista blanca (whitelist). También es imprescindible rellenar el asunto y el mensaje. Además, al pulsar el botón Adjuntar archivo, se abrirá el explorador de carpetas para que selecciones los archivos que deseas enviar; sin embargo, es importante tener en cuenta que el tamaño total de los archivos no debe superar los 10 MB, ni ningún archivo individual puede exceder este límite."
                     android:textColor="#757575"
                     android:textSize="16sp"
-                    android:layout_marginBottom="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="• Enviar solicitudes básicas"
-                    android:textColor="#757575"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="4dp"/>
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="244dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/Captura8" />
             </LinearLayout>
+
             <!-- Puedes añadir más secciones aquí -->
         </LinearLayout>
     </ScrollView>

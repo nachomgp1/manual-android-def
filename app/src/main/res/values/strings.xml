@@ -8,6 +8,10 @@
     <string name="hint_edittext_username">Enter your username</string>
     <string name="hint_edittext_password">Enter your password</string>
     <string name="index_label">Index</string>
-    <string name="inicio_de_sesion">Inicio de Sesion</string>
-    <string name="los_usuarios_est_ndar_tienen_acceso_limitado_a_las_funciones_del_sistema_pueden_visualizar_e_interactuar_con_funcionalidades_b_sicas_pero_no_pueden_modificar_la_configuraci_n_del_sistema">Al ingresar en la sección de correo, encontrarás un botón denominado "Login with Google". Al pulsarlo, se abrirá una ventana en el navegador para iniciar sesión con tu cuenta de Google. Además, hay una flecha que permite regresar al menú principal.</string>
+    <string name="inicio_de_sesion">1-Inicio de Sesion</string>
+    <string name="los_usuarios_est_ndar_tienen_acceso_limitado_a_las_funciones_del_sistema_pueden_visualizar_e_interactuar_con_funcionalidades_b_sicas_pero_no_pueden_modificar_la_configuraci_n_del_sistema">Al ingresar en la sección de correo, encontrarás un botón denominado "Login with Google". Al pulsarlo, se abrirá una ventana en el navegador para iniciar sesión con tu cuenta de Google.(Por el momento no esta disponible el uso de la cuenta de la fundacion por que esta bloquea el inicio de sesion desde aplicaciones de terceros) Además, hay una flecha que permite regresar al menú principal.</string>
+    <string name="requisitos_necesesarios">Requisitos Necesesarios:</string>
+    <string name="la_cuenta_con_la_que_inicies_sesion_debe_coincidir_con_la_que_esta_registrada_con_su_usuario_de_la_aplicacion">• La cuenta con la que inicies sesion debe coincidir con la que esta registrada con su usuario de la aplicacion</string>
+    <string name="posser_una_cuenta_de_google">• Posser una cuenta de google</string>
+    <string name="ejemplo_grafico">Ejemplo Grafico</string>
 </resources>
