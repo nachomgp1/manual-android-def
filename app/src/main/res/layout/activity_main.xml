@@ -5,50 +5,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
-<LinearLayout
-    android:id="@+id/tittleLayout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:layout_centerHorizontal="true"
-    android:layout_alignParentTop="true"
-    android:orientation="horizontal"
-    android:paddingTop="20dp"
-    >
-    <TextView
-        android:text="@string/tittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        >
-    </TextView>
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="NetOrange"
+            android:textColor="#3E50B4"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="User manual"
+            android:textColor="#fb962b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="120dp"
+            android:text="Log In"
+            android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/credentialsLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
-            android:text="@string/username_label"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="0dp"
+            android:text="@string/username_label">
+
         </TextView>
+
         <EditText
             android:id="@+id/edittxt_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/hint_edittext_username">
+
         </EditText>
+
         <TextView
-            android:text="@string/password_label"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="0dp"
+            android:text="@string/password_label">
+
         </TextView>
+
         <EditText
             android:id="@+id/edittxt_password"
             android:layout_width="wrap_content"
@@ -64,23 +97,25 @@
         android:id="@+id/buttonsLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:paddingBottom="100dp">
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingBottom="180dp">
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/log_in_button"/>
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#fb962b"
+            android:text="@string/log_in_button" />
+
         <Button
             android:id="@+id/exit_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exit_button">
-        </Button>
-
+            android:backgroundTint="#fb962b"
+            android:text="@string/exit_button" />
     </LinearLayout>
 
 </RelativeLayout>

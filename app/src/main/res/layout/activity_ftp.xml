@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="3. Almacenamiento (ADMIN)"
+                    android:text="3. Consultas"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -103,7 +103,17 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="4. Gestión permisos (ADMIN)"
+                    android:text="4. Almacenamiento (ADMIN)"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/indexItem5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="5. Gestión permisos (ADMIN)"
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -130,7 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Nos dirigirá a la ventana del ftp. Dependiendo del tipo de usuario, nos aparecerán unos botones u otros."
+                    android:text="Existen múltiples opciones a las que tendrán acceso los usuarios según sea su nivel de permisos"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -301,8 +311,112 @@
                     android:text="Seleccionamos la ruta donde se encunetran las carpetas de las que queremos conocer nuestros permisos sobre ellas a través del desplegable. Pulsamos sobre el botón 'Consultar permisos', esto nos mostrará todas las carpetas que se encuentran en la ruta seleccionada y los tipos de permisos que tenemos sobre ellas"
                     android:textColor="#757575"
                     android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Consultas:"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Pulsamos sobre la flecha desplegable lo que nos mostrará un arbol de los direcotrios disponibles. Podremos desplegar cada directorio para ver todo su contenido."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Almacenamiento:"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos el directorio del que deseamos modificar el límite disponible a través del desplegable. Introducimos el límite en mega bytes en la caja de texto y pulsamos sobre el botón 'Modificar Límite'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Almacenamiento:"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos el usuario al que queremos asignar permisos a través del desplegable. Estos usuarios debén de pertenecer a un grupo. Una vez seleccionado el usuario elegimos la carpeta que deseamos a la que el usuario tenga permisos y pulsamos sobre el botón 'Asignar Permisos'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
             </LinearLayout>
-            <!-- Puedes añadir más secciones aquí -->
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/footerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/footerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024 NetOrange protected rigths"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
+
+
     </ScrollView>
+
+
 </RelativeLayout>
