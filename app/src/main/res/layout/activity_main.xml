@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="20dp">
+        android:paddingTop="28dp">
 
         <TextView
             android:id="@+id/titleLabel"
