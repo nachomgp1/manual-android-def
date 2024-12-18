@@ -27,6 +27,10 @@ public class ViewStandardUser extends AppCompatActivity implements View.OnClickL
         btnFtpServer.setId(View.generateViewId());
         btnFtpServer.setOnClickListener(this);
 
+        btnEmail = findViewById(R.id.btnEmail);
+        btnEmail.setId(View.generateViewId());
+        btnEmail.setOnClickListener(this);
+
         Intent intent = getIntent();
 
 
@@ -36,15 +40,23 @@ public class ViewStandardUser extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         int id = v.getId();
 
-        if(id == btnFtpServer.getId()){
+        if (id == btnFtpServer.getId()) {
             OpenFtpServerView();
+        } else if (id == btnEmail.getId()) {
+            OpenMailView();
         }
     }
 
-    public void OpenFtpServerView(){
+    public void OpenFtpServerView() {
         Intent intent = new Intent(ViewStandardUser.this, ViewFtpServer.class);
         startActivity(intent);
         finish();
 
+    }
+
+    public void OpenMailView() {
+        Intent intent = new Intent(ViewStandardUser.this, ViewEmail.class);
+        startActivity(intent);
+        finish();
     }
 }

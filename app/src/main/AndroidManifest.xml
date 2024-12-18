@@ -28,6 +28,7 @@
         <activity android:name=".MainMenu"/>
         <activity android:name=".ViewStandardUser" />
         <activity android:name=".ViewFtpServer" />
+        <activity android:name=".ViewEmail" />
 
 
 
