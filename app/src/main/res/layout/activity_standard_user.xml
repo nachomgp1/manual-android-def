@@ -3,8 +3,8 @@
     android:id="@+id/mainStandarUserLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fb962b"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
     <!-- Título -->
     <LinearLayout
@@ -52,9 +52,14 @@
             android:padding="10dp">
 
             <TextView
+
+                android:padding="15dp"
+                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Standard users have the possibility of accessing all their files in addition to those that have been shared with them and enjoy the service of sending emails to other users. These users are created by the administrator, who provides them with a name and password, and they cannot belong to any group since this is the most basic type of user."></TextView>
+                android:text="Standard users have the possibility of accessing all their files in addition to those that have been shared with them and enjoy the service of sending emails to other users. These users are created by the administrator, who provides them with a name and password, and they cannot belong to any group since this is the most basic type of user.">
+
+            </TextView>
 
         </LinearLayout>
     </ScrollView>
@@ -69,26 +74,24 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnFtpServer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="30dp"
+            android:backgroundTint="#fb962b"
             android:text="FTP SERVER">
 
         </Button>
 
         <Button
+            android:id="@+id/btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="EMAIL MANAGMENT"></Button>
+            android:backgroundTint="#fb962b"
+            android:text="EMAIL MANAGMENT">
+
+        </Button>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="660dp"
-        android:background="#3E50B4">
-
-    </View>
 
 
     <LinearLayout
