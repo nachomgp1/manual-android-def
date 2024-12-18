@@ -21,7 +21,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Volver atrás" />
+            android:contentDescription="@string/volver_atr_s" />
 
         <TextView
             android:id="@+id/titleLabel"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Manual de Usuario FTP Server"
+            android:text="@string/manual_de_usuario_ftp_server"
             android:textColor="#3E50B4"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Índice"
+                    android:text="@string/index_label"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="1. Gestión archivos"
+                    android:text="@string/_1_gesti_n_archivos"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="2. Gestión directorios"
+                    android:text="@string/_2_gesti_n_directorios"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="3. Consultas"
+                    android:text="@string/_3_consultas"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="4. Almacenamiento (ADMIN)"
+                    android:text="@string/_4_almacenamiento_admin"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="5. Gestión permisos (ADMIN)"
+                    android:text="@string/_5_gesti_n_permisos_admin"
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -131,7 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Introducción"
+                    android:text="@string/introducci_n"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -140,7 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Existen múltiples opciones a las que tendrán acceso los usuarios según sea su nivel de permisos"
+                    android:text="@string/existen_m_ltiples_opciones_a_las_que_tendr_n_acceso_los_usuarios_seg_n_sea_su_nivel_de_permisos"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -158,7 +158,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Gestión archivos:"
+                    android:text="@string/gesti_n_archivos"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -167,7 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Subir archivo"
+                    android:text="@string/subir_archivo"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Comenzaremos eligiendo el directorio FTP a donde queremos subir el archivo, se mostrará un desplegable con todos los disponibles. Seleccionaremos el archivo a subir pulsando sobre el botón 'Seleccionar Archivo'. Un avez seleccionado pulsamos sobre el botón 'Subir Archivo' para subir el archivo al servidor."
+                    android:text="@string/comenzaremos_eligiendo_el_directorio_ftp_a_donde_queremos_subir_el_archivo_se_mostrar_un_desplegable_con_todos_los_disponibles_seleccionaremos_el_archivo_a_subir_pulsando_sobre_el_bot_n_seleccionar_archivo_un_avez_seleccionado_pulsamos_sobre_el_bot_n_subir_archivo_para_subir_el_archivo_al_servidor"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -184,7 +184,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Descargar archivo"
+                    android:text="@string/descargar_archivo"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -193,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos el archivo a descargar a través del desplegable. Pulsamos sobre el botón 'Descargar Archivo'."
+                    android:text="@string/seleccionamos_el_archivo_a_descargar_a_trav_s_del_desplegable_pulsamos_sobre_el_bot_n_descargar_archivo"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -201,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Eliminar archivo"
+                    android:text="@string/eliminar_archivo"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -210,7 +210,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos el archivo a eliminar a través del desplegable y pulsamos sobre el botón 'Eliminar Archivo'."
+                    android:text="@string/seleccionamos_el_archivo_a_eliminar_a_trav_s_del_desplegable_y_pulsamos_sobre_el_bot_n_eliminar_archivo"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -218,7 +218,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Renombrar archivo"
+                    android:text="@string/renombrar_archivo"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -227,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos el archivo a renombrar a través del desplegable. Introducimos el nuevo nombre en la caja de texto y pulsamos sobre el botón 'Renombrar Archivo'."
+                    android:text="@string/seleccionamos_el_archivo_a_renombrar_a_trav_s_del_desplegable_introducimos_el_nuevo_nombre_en_la_caja_de_texto_y_pulsamos_sobre_el_bot_n_renombrar_archivo"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -256,7 +256,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Gestión directorio:"
+                    android:text="@string/gesti_n_directorio"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -265,7 +265,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Crear directorio"
+                    android:text="@string/crear_directorio"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -274,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos la ruta donde queremos que se cree la carpeta o directorio a través del desplegable. Introducimos el nombre del direcotio que queremos crear en la caja de texto y pulsamos sobre el botón 'Crear Carpeta'."
+                    android:text="@string/seleccionamos_la_ruta_donde_queremos_que_se_cree_la_carpeta_o_directorio_a_trav_s_del_desplegable_introducimos_el_nombre_del_direcotio_que_queremos_crear_en_la_caja_de_texto_y_pulsamos_sobre_el_bot_n_crear_carpeta"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -282,7 +282,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Eliminar directorio"
+                    android:text="@string/eliminar_directorio"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -291,7 +291,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos la ruta donde se encuentra la carpeta que deseamos eliminar y la carpeta que queremos eliminar a través de los desplegables. Pulsamos sobre el botón 'Eliminar Carpeta'."
+                    android:text="@string/seleccionamos_la_ruta_donde_se_encuentra_la_carpeta_que_deseamos_eliminar_y_la_carpeta_que_queremos_eliminar_a_trav_s_de_los_desplegables_pulsamos_sobre_el_bot_n_eliminar_carpeta"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -299,7 +299,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="• Gestión acceso"
+                    android:text="@string/gesti_n_acceso"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -308,7 +308,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos la ruta donde se encunetran las carpetas de las que queremos conocer nuestros permisos sobre ellas a través del desplegable. Pulsamos sobre el botón 'Consultar permisos', esto nos mostrará todas las carpetas que se encuentran en la ruta seleccionada y los tipos de permisos que tenemos sobre ellas"
+                    android:text="@string/seleccionamos_la_ruta_donde_se_encunetran_las_carpetas_de_las_que_queremos_conocer_nuestros_permisos_sobre_ellas_a_trav_s_del_desplegable_pulsamos_sobre_el_bot_n_consultar_permisos_esto_nos_mostrar_todas_las_carpetas_que_se_encuentran_en_la_ruta_seleccionada_y_los_tipos_de_permisos_que_tenemos_sobre_ellas"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -325,7 +325,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Consultas:"
+                    android:text="@string/consultas"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -335,7 +335,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Pulsamos sobre la flecha desplegable lo que nos mostrará un arbol de los direcotrios disponibles. Podremos desplegar cada directorio para ver todo su contenido."
+                    android:text="@string/pulsamos_sobre_la_flecha_desplegable_lo_que_nos_mostrar_un_arbol_de_los_direcotrios_disponibles_podremos_desplegar_cada_directorio_para_ver_todo_su_contenido"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -352,7 +352,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Almacenamiento:"
+                    android:text="@string/almacenamiento"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -362,7 +362,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos el directorio del que deseamos modificar el límite disponible a través del desplegable. Introducimos el límite en mega bytes en la caja de texto y pulsamos sobre el botón 'Modificar Límite'."
+                    android:text="@string/seleccionamos_el_directorio_del_que_deseamos_modificar_el_l_mite_disponible_a_trav_s_del_desplegable_introducimos_el_l_mite_en_mega_bytes_en_la_caja_de_texto_y_pulsamos_sobre_el_bot_n_modificar_l_mite"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -379,7 +379,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Almacenamiento:"
+                    android:text="@string/almacenamiento"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -389,7 +389,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:padding="6dp"
-                    android:text="Seleccionamos el usuario al que queremos asignar permisos a través del desplegable. Estos usuarios debén de pertenecer a un grupo. Una vez seleccionado el usuario elegimos la carpeta que deseamos a la que el usuario tenga permisos y pulsamos sobre el botón 'Asignar Permisos'."
+                    android:text="@string/seleccionamos_el_usuario_al_que_queremos_asignar_permisos_a_trav_s_del_desplegable_estos_usuarios_deb_n_de_pertenecer_a_un_grupo_una_vez_seleccionado_el_usuario_elegimos_la_carpeta_que_deseamos_a_la_que_el_usuario_tenga_permisos_y_pulsamos_sobre_el_bot_n_asignar_permisos"
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
@@ -409,7 +409,7 @@
                     android:id="@+id/footerText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2024 NetOrange protected rigths"
+                    android:text="@string/_2024_netorange_protected_rights"
                     android:textColor="#757575"
                     android:textSize="14sp" />
             </LinearLayout>

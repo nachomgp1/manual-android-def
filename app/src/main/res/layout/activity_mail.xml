@@ -20,14 +20,14 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Volver atrás"/>
+            android:contentDescription="@string/volver_atr_s"/>
 
         <TextView
             android:id="@+id/titleLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Manual de Usuario"
+            android:text="@string/manual_de_usuario"
             android:textColor="#3E50B4"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="Índice"
+                    android:text="@string/ndice"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="1. Inicio de Sesion"
+                    android:text="@string/_1_inicio_de_sesion"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="2. Uso de Correo "
+                    android:text="@string/_2_uso_de_correo"
                     android:textColor="#757575"
                     android:textSize="16sp" />
                 <TextView
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="7dp"
-                    android:text="  2.1 Leer  Correo "
+                    android:text="@string/_2_1_leer_correo"
                     android:textColor="#757575"
                     android:textSize="16sp" />
                 <TextView
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="7dp"
-                    android:text="  2.2 Enviar Correo "
+                    android:text="@string/_2_2_enviar_correo"
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -169,7 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="1º-Pincho en el boton de Login with google"
+                    android:text="@string/_1_pincho_en_el_boton_de_login_with_google"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -183,7 +183,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="2º-En el navegador eligo la cuenta de correo correcta,tendra que ser la asociada a su usuario , no esta disponible usar el correo de la fundacion "
+                    android:text="@string/_2_en_el_navegador_eligo_la_cuenta_de_correo_correcta_tendra_que_ser_la_asociada_a_su_usuario_no_esta_disponible_usar_el_correo_de_la_fundacion"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -197,7 +197,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="3º-Nos aparecera un aviso de que no se ha verificado , le doy a configuracion avanzada"
+                    android:text="@string/_3_nos_aparecera_un_aviso_de_que_no_se_ha_verificado_le_doy_a_configuracion_avanzada"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -211,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="4º-Y le das a ir a AppCorreo"
+                    android:text="@string/_4_y_le_das_a_ir_a_appcorreo"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -225,7 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="5º-Le doy perpisos para que pueda usar los servicios de gmail,y le doy en continuar"
+                    android:text="@string/_5_le_doy_perpisos_para_que_pueda_usar_los_servicios_de_gmail_y_le_doy_en_continuar"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -239,7 +239,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="6º-Ya has terminado el inicio de sesion, es posible cerrar la pestaña y continuar en la aplicacion"
+                    android:text="@string/_6_ya_has_terminado_el_inicio_de_sesion_es_posible_cerrar_la_pesta_a_y_continuar_en_la_aplicacion"
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -256,7 +256,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2. Uso del Correo"
+                    android:text="@string/_2_uso_del_correo"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -265,7 +265,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Después de haber iniciado sesión, cargará la bandeja de entrada de correos."
+                    android:text="@string/despu_s_de_haber_iniciado_sesi_n_cargar_la_bandeja_de_entrada_de_correos"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -273,7 +273,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Al lado de cada correo nos aparecerán dos botones en la columna Actions: uno elimina el correo y otro cambia el estado de Leído o No leído al contrario."
+                    android:text="@string/al_lado_de_cada_correo_nos_aparecer_n_dos_botones_en_la_columna_actions_uno_elimina_el_correo_y_otro_cambia_el_estado_de_le_do_o_no_le_do_al_contrario"
                 android:textColor="#757575"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -281,7 +281,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="El botón de Refresh recarga la bandeja de entrada, y el botón de Log Out cierra sesión del correo (no de la aplicación)."
+                    android:text="@string/el_bot_n_de_refresh_recarga_la_bandeja_de_entrada_y_el_bot_n_de_log_out_cierra_sesi_n_del_correo_no_de_la_aplicaci_n"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -294,7 +294,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2.1 Leer correo"
+                    android:text="@string/_2_1_leer_correo_texto"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -303,7 +303,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Al hacer doble clic sobre un correo, este se abrirá en una nueva pestaña donde se mostrará el contenido completo del correo y los archivos adjuntos organizados en un apartado llamado Attachments. En este apartado, cada archivo tendrá un botón que permitirá descargarlo automáticamente al hacer clic."
+                    android:text="@string/al_hacer_doble_clic_sobre_un_correo_este_se_abrir_en_una_nueva_pesta_a_donde_se_mostrar_el_contenido_completo_del_correo_y_los_archivos_adjuntos_organizados_en_un_apartado_llamado_attachments_en_este_apartado_cada_archivo_tendr_un_bot_n_que_permitir_descargarlo_autom_ticamente_al_hacer_clic"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -315,7 +315,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2.2 Enviar Correo"
+                    android:text="@string/_2_2_enviar_correo_texto"
                     android:textColor="#3E50B4"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -324,7 +324,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="En la bandeja de entrada, al acceder a la opción Enviar Mail, encontrarás los campos necesarios para completar el envío de un mensaje. El campo Para corresponde al destinatario del correo, quien debe estar incluido en la lista blanca (whitelist). También es imprescindible rellenar el asunto y el mensaje. Además, al pulsar el botón Adjuntar archivo, se abrirá el explorador de carpetas para que selecciones los archivos que deseas enviar; sin embargo, es importante tener en cuenta que el tamaño total de los archivos no debe superar los 10 MB, ni ningún archivo individual puede exceder este límite."
+                    android:text="@string/en_la_bandeja_de_entrada_al_acceder_a_la_opci_n_enviar_mail_encontrar_s_los_campos_necesarios_para_completar_el_env_o_de_un_mensaje_el_campo_para_corresponde_al_destinatario_del_correo_quien_debe_estar_incluido_en_la_lista_blanca_whitelist_tambi_n_es_imprescindible_rellenar_el_asunto_y_el_mensaje_adem_s_al_pulsar_el_bot_n_adjuntar_archivo_se_abrir_el_explorador_de_carpetas_para_que_selecciones_los_archivos_que_deseas_enviar_sin_embargo_es_importante_tener_en_cuenta_que_el_tama_o_total_de_los_archivos_no_debe_superar_los_10_mb_ni_ning_n_archivo_individual_puede_exceder_este_l_mite"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -338,4 +338,21 @@
             <!-- Puedes añadir más secciones aquí -->
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024 NetOrange protected rigths"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+    </LinearLayout>
 </RelativeLayout>

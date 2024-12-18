@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
-            android:text="NetOrange"
+            android:text="@string/netorange"
             android:textColor="#3E50B4"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="User manual"
+            android:text="@string/user_manual"
             android:textColor="#fb962b"
             android:textSize="16sp" />
 
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="120dp"
-            android:text="Log In"
+            android:text="@string/log_in_button"
             android:textSize="30sp">
 
         </TextView>

@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
-            android:text="NetOrange"
+            android:text="@string/netorange"
             android:textColor="#3E50B4"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -31,13 +31,13 @@
             android:id="@+id/subtitleLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User manual"
+            android:text="@string/user_manual"
             android:textSize="16sp"
             android:textColor="#fb962b"
             android:layout_marginTop="4dp" />
         <TextView
             android:id="@+id/logLabel"
-            android:text="Logged user:"
+            android:text="@string/logged_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="STANDAR USER"
+                android:text="@string/standar_user"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="GROUP USER"
+                android:text="@string/group_user"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="ADMINISTRATOR"
+                android:text="@string/administrator"
                 android:layout_marginBottom="8dp"/>
             <Button
                 android:id="@+id/btnSection4"
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fb962b"
                 android:textColor="#FFFFFF"
-                android:text="SETTINGS"
+                android:text="@string/settings"
                 android:layout_marginBottom="8dp"/>
             <Button
                 android:id="@+id/btnSection5"
@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#3E50B4"
                 android:textColor="#FFFFFF"
-                android:text="EXIT"
+                android:text="@string/exit"
                 android:layout_marginBottom="8dp">
 
             </Button>
@@ -135,7 +135,7 @@
             android:id="@+id/footerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2024 NetOrange protected rigths"
+            android:text="@string/_2024_netorange_protected_rigths"
             android:textColor="#757575"
             android:textSize="14sp" />
     </LinearLayout>

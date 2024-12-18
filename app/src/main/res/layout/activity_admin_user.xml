@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/standar_user"
+            android:text="@string/admin_user"
             android:textColor="#3E50B4"
             android:textSize="24sp" />
 
@@ -28,11 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="8dp"
-            android:background="#3E50B4">
-
-        </View>
-
-
+            android:background="#3E50B4" />
     </LinearLayout>
 
     <!-- ScrollView con contenido -->
@@ -52,18 +48,15 @@
             android:padding="10dp">
 
             <TextView
-
                 android:padding="15dp"
                 android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/standard_users_have_the_possibility_of_accessing_all_their_files_in_addition_to_those_that_have_been_shared_with_them_and_enjoy_the_service_of_sending_emails_to_other_users_these_users_are_created_by_the_administrator_who_provides_them_with_a_name_and_password_and_they_cannot_belong_to_any_group_since_this_is_the_most_basic_type_of_user">
-
-            </TextView>
-
+                android:text="@string/el_usuario_administrador_adem_s_de_contar_con_funciones_relacionadas_con_ftp_y_correo_posee_una_caracter_stica_destacada_la_gesti_n_integral_de_usuarios_esta_funci_n_le_permite_realizar_diversas_operaciones_como_crear_nuevos_usuarios_eliminarlos_y_modificar_los_l_mites_de_uso_de_los_servicios_de_correo_o_ftp_garantizando_un_control_completo_y_eficiente" />
         </LinearLayout>
     </ScrollView>
 
+    <!-- Botones -->
     <LinearLayout
         android:id="@+id/buttonsLayout"
         android:layout_width="match_parent"
@@ -71,29 +64,39 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnFtpServer"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="#fb962b"
-            android:text="@string/ftp_server">
+            android:orientation="horizontal">
 
-        </Button>
+            <Button
+                android:id="@+id/btnFtpServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#fb962b"
+                android:text="@string/ftp_server" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fb962b"
+                android:text="@string/email_managment" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btnEmail"
+            android:id="@+id/btngestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#fb962b"
-            android:text="@string/email_managment">
-
-        </Button>
+            android:text="@string/gestion_usuarios" />
     </LinearLayout>
 
-
+    <!-- Footer -->
     <LinearLayout
         android:id="@+id/footerLayout"
         android:layout_width="wrap_content"
@@ -102,14 +105,9 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_2024_netorange_protected_rigths">
-
-        </TextView>
+            android:text="@string/_2024_netorange_protected_rights" />
     </LinearLayout>
-
-
 </RelativeLayout>
