@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public EditText edit_txt_password;
     Button login_btn;
     Button exit_btn;
+    Settings settings = new Settings();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        String languageApp = getSavedLanguageCode();
-        ApplyLocale(languageApp);
+
 
 
         //Layouts
@@ -99,18 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    public void ApplyLocale(String languageApp){
-        Locale locale = new Locale(languageApp);
-        Locale.setDefault(locale);
 
-        Resources resources = getResources();
-        Configuration configuration = resources.getConfiguration();
-        configuration.setLocale(locale);
-        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-    }
 
-    public String getSavedLanguageCode(){
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        return prefs.getString("language", "en");
-    }
+
 }

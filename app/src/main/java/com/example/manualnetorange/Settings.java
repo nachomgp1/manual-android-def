@@ -21,6 +21,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
     RelativeLayout mainLayout;
     Button btnBack;
     Switch languageSwitch;
+    Switch themeSwitch;
 
 
     @Override
@@ -37,7 +38,17 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
 
         languageSwitch = findViewById(R.id.languageSwitch);
         languageSwitch.setId(View.generateViewId());
+
+        String currentLanguage = getSavedLanguageCode();
+
+        languageSwitch.setChecked(currentLanguage.equals("en"));
+
         languageSwitch.setOnCheckedChangeListener(this);
+
+
+
+
+
 
 
     }
@@ -56,13 +67,13 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
 
         if(isChecked){
 
-            saveLanguageCode("es");
-            SetLocale("es");
+            saveLanguageCode("en");
+            SetLocale("en");
         }
         else{
             //Default
-            saveLanguageCode("en");
-            SetLocale("en");
+            saveLanguageCode("es");
+            SetLocale("es");
         }
     }
 
@@ -81,11 +92,20 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
         configuration.setLocale(locale);
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
 
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+
     }
 
     private void saveLanguageCode(String languageApp){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.edit().putString("language", languageApp).apply();
+    }
+
+    public String getSavedLanguageCode(){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        return prefs.getString("language", "es");
     }
 
 
