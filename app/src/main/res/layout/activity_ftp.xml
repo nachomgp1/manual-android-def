@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayoutFtp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Volver atrás" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Manual de Usuario FTP Server"
+            android:textColor="#3E50B4"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Main ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Índice Section -->
+
+            <!-- Contenido de Usuario Estándar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Índice"
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/indexItem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="1. Gestión archivos"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/indexItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="2. Gestión directorios"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/indexItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="3. Almacenamiento (ADMIN)"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/indexItem4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="4. Gestión permisos (ADMIN)"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Introducción"
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Nos dirigirá a la ventana del ftp. Dependiendo del tipo de usuario, nos aparecerán unos botones u otros."
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Gestión archivos:"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Subir archivo"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Comenzaremos eligiendo el directorio FTP a donde queremos subir el archivo, se mostrará un desplegable con todos los disponibles. Seleccionaremos el archivo a subir pulsando sobre el botón 'Seleccionar Archivo'. Un avez seleccionado pulsamos sobre el botón 'Subir Archivo' para subir el archivo al servidor."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Descargar archivo"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos el archivo a descargar a través del desplegable. Pulsamos sobre el botón 'Descargar Archivo'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Eliminar archivo"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos el archivo a eliminar a través del desplegable y pulsamos sobre el botón 'Eliminar Archivo'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Renombrar archivo"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos el archivo a renombrar a través del desplegable. Introducimos el nuevo nombre en la caja de texto y pulsamos sobre el botón 'Renombrar Archivo'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#3E50B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Gestión directorio:"
+                    android:textColor="#3E50B4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Crear directorio"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos la ruta donde queremos que se cree la carpeta o directorio a través del desplegable. Introducimos el nombre del direcotio que queremos crear en la caja de texto y pulsamos sobre el botón 'Crear Carpeta'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Eliminar directorio"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos la ruta donde se encuentra la carpeta que deseamos eliminar y la carpeta que queremos eliminar a través de los desplegables. Pulsamos sobre el botón 'Eliminar Carpeta'."
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="• Gestión acceso"
+                    android:textColor="#fb962b"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:padding="6dp"
+                    android:text="Seleccionamos la ruta donde se encunetran las carpetas de las que queremos conocer nuestros permisos sobre ellas a través del desplegable. Pulsamos sobre el botón 'Consultar permisos', esto nos mostrará todas las carpetas que se encuentran en la ruta seleccionada y los tipos de permisos que tenemos sobre ellas"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- Puedes añadir más secciones aquí -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
