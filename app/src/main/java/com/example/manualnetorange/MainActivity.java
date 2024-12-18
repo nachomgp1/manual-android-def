@@ -1,7 +1,11 @@
 package com.example.manualnetorange;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +21,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        String languageApp = getSavedLanguageCode();
+        ApplyLocale(languageApp);
+
 
         //Layouts
         mainLayout = findViewById(R.id.mainLayot);
@@ -82,13 +91,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } catch (SQLException e) {
             Toast.makeText(MainActivity.this, "Error with database", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 
     public void OpenMainMenu (String username){
         Intent intent = new Intent(MainActivity.this, MainMenu.class);
         intent.putExtra("username", username);
         startActivity(intent);
+    }
+
+    public void ApplyLocale(String languageApp){
+        Locale locale = new Locale(languageApp);
+        Locale.setDefault(locale);
+
+        Resources resources = getResources();
+        Configuration configuration = resources.getConfiguration();
+        configuration.setLocale(locale);
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+    }
+
+    public String getSavedLanguageCode(){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        return prefs.getString("language", "en");
     }
 }

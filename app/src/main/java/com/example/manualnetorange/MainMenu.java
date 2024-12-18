@@ -53,8 +53,6 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         }
     }
 
-
-
     private void OpenStandarUserView() {
         Intent intent = new Intent(MainMenu.this, ViewStandardUser.class);
         startActivity(intent);
