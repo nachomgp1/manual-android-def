@@ -94,4 +94,5 @@
     <string name="cambiar_lenguaje">Cambiar lenguaje</string>
     <string name="ajustes">Ajustes</string>
     <string name="atras">Atras</string>
+    <string name="usuario_de_grupo">Usuario de grupo</string>
 </resources>

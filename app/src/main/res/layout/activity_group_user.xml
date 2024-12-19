@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Usuario de grupo"
+                android:text="@string/usuario_de_grupo"
                 android:textColor="#3E50B4"
                 android:textSize="24sp" />
         </LinearLayout>
