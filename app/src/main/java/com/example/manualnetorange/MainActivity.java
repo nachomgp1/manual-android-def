@@ -1,11 +1,7 @@
 package com.example.manualnetorange;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,13 +11,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -74,16 +63,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String username = edit_txt_username.getText().toString();
         String password = edit_txt_password.getText().toString();
 
-        if (id == login_btn.getId()){
+        if (id == login_btn.getId()) {
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(MainActivity.this, "Por favor ingresa un dato", Toast.LENGTH_SHORT).show();
                 return;
             }
             verifyData(username, password);
-        }else if (id == exit_btn.getId()){
+        } else if (id == exit_btn.getId()) {
             finishAffinity();
         }
     }
+
     private void verifyData(String name, String password) {
         ApiService apiService = RetrofitClient.getRetrofitInstance().create(ApiService.class);
 
@@ -103,14 +93,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         OpenMainMenu(name);
                     }
                 } else {
-                    contadorFallos ++;
-                    if (contadorFallos == 3){
+                    contadorFallos++;
+                    if (contadorFallos == 3) {
                         finishAffinity();
                         Toast.makeText(MainActivity.this, "Cerrando: numero de fallos alcanzado", Toast.LENGTH_SHORT).show();
                     }
                     Toast.makeText(MainActivity.this, "Error: Usuario o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
                 }
             }
+
             @Override
             public void onFailure(Call<VerifyResponse> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Error de conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();

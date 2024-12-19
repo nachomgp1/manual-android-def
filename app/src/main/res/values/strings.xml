@@ -95,4 +95,5 @@
     <string name="ajustes">Ajustes</string>
     <string name="atras">Atras</string>
     <string name="usuario_de_grupo">Usuario de grupo</string>
+    <string name="gestion_de_permisos">Gestión de permisos</string>
 </resources>
