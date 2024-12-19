@@ -32,7 +32,7 @@
         <activity android:name=".ViewGestion" />
         <activity android:name=".Settings" />
         <activity android:name=".ViewAdmin" />
-
+        <activity android:name=".ViewGroupUser" />
 
 
     </application>

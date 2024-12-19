@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
     Button btnSettings;
     Button btnAdmin;
     Button btnExit;
-
+    Button btngroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +49,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         btnAdmin =findViewById(R.id.btnSection3);
         btnAdmin.setId(View.generateViewId());
         btnAdmin.setOnClickListener(this);
+
+        btngroup=findViewById(R.id.btnSection2);
+        btngroup.setId(View.generateViewId());
+        btngroup.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +70,15 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         else if (id== btnExit.getId()){
             GoBack();
         }
+        else if (id== btngroup.getId()){
+            OpenGroupview();
+        }
+    }
+
+    private void OpenGroupview() {
+        Intent intent = new Intent(MainMenu.this, ViewGroupUser.class);
+        startActivity(intent);
+        finish();
     }
 
     private void OpenAdminView() {

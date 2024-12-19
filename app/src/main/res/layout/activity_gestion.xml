@@ -29,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Manual Gestion Usuario"
+            android:text="@string/manual_gestion_usuario"
             android:textColor="#3E50B4"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="1-Permisos de Usuarios"
+                    android:text="@string/_1_permisos_de_usuarios"
                     android:textColor="#fb962b"
                     android:textSize="16sp" />
 
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
-                    android:text="2-Creador de Usuario"
+                    android:text="@string/_2_creador_de_usuario"
                     android:textColor="#757575"
                     android:textSize="16sp" />
                 <TextView
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="7dp"
-                    android:text="3-Crear Grupo"
+                    android:text="@string/_3_crear_grupo"
                     android:textColor="#757575"
                     android:textSize="16sp" />
                 <TextView
@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:padding="7dp"
-                    android:text="4-Borrar Usuario"
+                    android:text="@string/_4_borrar_usuario"
                     android:textColor="#757575"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -120,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="1.Permisos de Usuarios"
+                    android:text="@string/_1_permisos_de_usuarios"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -129,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Esta ventana nos permitirá realizar diversas configuraciones, como modificar los permisos de los roles, añadir usuarios externos a la lista blanca (whitelist) y ajustar el número máximo de mensajes diarios que pueden enviar los usuarios. Para aplicar los cambios relacionados con los roles y el límite de mensajes, simplemente haz clic en el botón guardar cambios. Por otro lado, para agregar un usuario a la lista blanca, utiliza el botón añadir."
+                    android:text="@string/esta_ventana_nos_permitir_realizar_diversas_configuraciones_como_modificar_los_permisos_de_los_roles_a_adir_usuarios_externos_a_la_lista_blanca_whitelist_y_ajustar_el_n_mero_m_ximo_de_mensajes_diarios_que_pueden_enviar_los_usuarios_para_aplicar_los_cambios_relacionados_con_los_roles_y_el_l_mite_de_mensajes_simplemente_haz_clic_en_el_bot_n_guardar_cambios_por_otro_lado_para_agregar_un_usuario_a_la_lista_blanca_utiliza_el_bot_n_a_adir"
                     android:textColor="#757575"
                     android:textSize="16sp" />
 
@@ -147,7 +147,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2.Creador de Usuarios"
+                    android:text="@string/_2_creador_de_usuario"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -158,7 +158,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="En la sección User Creator, podemos configurar diversos atributos esenciales: asignar un nombre de usuario, un correo electrónico, una contraseña y seleccionar el tipo de usuario. Si optamos por el tipo grupo, se habilitará una opción adicional para elegir el grupo correspondiente, brindando mayor flexibilidad en la personalización."
+                    android:text="@string/en_la_secci_n_user_creator_podemos_configurar_diversos_atributos_esenciales_asignar_un_nombre_de_usuario_un_correo_electr_nico_una_contrase_a_y_seleccionar_el_tipo_de_usuario_si_optamos_por_el_tipo_grupo_se_habilitar_una_opci_n_adicional_para_elegir_el_grupo_correspondiente_brindando_mayor_flexibilidad_en_la_personalizaci_n"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -175,7 +175,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3.Creador de Grupos"
+                    android:text="@string/_3_crear_grupo"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -183,8 +183,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="
-En la opción de creación de grupos se muestra una sección donde simplemente debes introducir el nombre del grupo y hacer clic en crear grupo."
+                    android:text="@string/en_la_opci_n_de_creaci_n_de_grupos_se_muestra_una_secci_n_donde_simplemente_debes_introducir_el_nombre_del_grupo_y_hacer_clic_en_crear_grupo"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -201,7 +200,7 @@ En la opción de creación de grupos se muestra una sección donde simplemente d
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4.Borrar Usuario"
+                    android:text="@string/_4_borrar_usuario"
                     android:textColor="#3E50B4"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -209,7 +208,7 @@ En la opción de creación de grupos se muestra una sección donde simplemente d
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="En la opción de borrado de usuarios, se selecciona el usuario que deseas eliminar de la lista y luego se hace clic en borrar."
+                    android:text="@string/en_la_opci_n_de_borrado_de_usuarios_se_selecciona_el_usuario_que_deseas_eliminar_de_la_lista_y_luego_se_hace_clic_en_borrar"
                     android:textColor="#757575"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -223,12 +222,11 @@ En la opción de creación de grupos se muestra una sección donde simplemente d
                 android:gravity="center"
                 android:padding="16dp"
                 android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/footerText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2024 NetOrange protected rigths"
+                    android:text="@string/_2024_netorange_protected_rights"
                     android:textColor="#757575"
                     android:textSize="14sp" />
             </LinearLayout>
