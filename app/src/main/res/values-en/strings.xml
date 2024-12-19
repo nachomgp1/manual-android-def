@@ -92,4 +92,7 @@
     <string name="en_la_opci_n_de_creaci_n_de_grupos_se_muestra_una_secci_n_donde_simplemente_debes_introducir_el_nombre_del_grupo_y_hacer_clic_en_crear_grupo">" In the group creation option, a section is displayed where you simply need to enter the group name and click on create group."</string>
     <string name="en_la_opci_n_de_borrado_de_usuarios_se_selecciona_el_usuario_que_deseas_eliminar_de_la_lista_y_luego_se_hace_clic_en_borrar">In the user deletion option, select the user you wish to remove from the list and then click on delete.</string>
     <string name="el_tipo_de_usuario_de_grupo_es_similar_al_est_ndar_pero_con_la_particularidad_de_que_solo_puede_acceder_a_la_carpeta_compartida_y_visualizarla_entre_los_miembros_asignados_a_dicha_carpeta_por_lo_tanto_tambi_n_tiene_acceso_al_servicio_de_ftp_y_al_servicio_de_gmail_lo_que_le_permite_interactuar_y_gestionar_recursos_dentro_de_estos_servicios_de_manera_eficiente">The group user type is similar to the standard one, but with the particularity that it can only access the shared folder and view it among the members assigned to that folder. Therefore, it also has access to the FTP service and the Gmail service, allowing it to interact and manage resources within these services efficiently.</string>
+    <string name="cambiar_lenguaje">Change language</string>
+    <string name="ajustes">Settings</string>
+    <string name="atras">Back</string>
 </resources>

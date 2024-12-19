@@ -91,4 +91,7 @@
     <string name="en_la_opci_n_de_creaci_n_de_grupos_se_muestra_una_secci_n_donde_simplemente_debes_introducir_el_nombre_del_grupo_y_hacer_clic_en_crear_grupo">En la opción de creación de grupos se muestra una sección donde simplemente debes introducir el nombre del grupo y hacer clic en crear grupo.</string>
     <string name="en_la_opci_n_de_borrado_de_usuarios_se_selecciona_el_usuario_que_deseas_eliminar_de_la_lista_y_luego_se_hace_clic_en_borrar">En la opción de borrado de usuarios, se selecciona el usuario que deseas eliminar de la lista y luego se hace clic en borrar.</string>
     <string name="el_tipo_de_usuario_de_grupo_es_similar_al_est_ndar_pero_con_la_particularidad_de_que_solo_puede_acceder_a_la_carpeta_compartida_y_visualizarla_entre_los_miembros_asignados_a_dicha_carpeta_por_lo_tanto_tambi_n_tiene_acceso_al_servicio_de_ftp_y_al_servicio_de_gmail_lo_que_le_permite_interactuar_y_gestionar_recursos_dentro_de_estos_servicios_de_manera_eficiente">El tipo de usuario de grupo es similar al estándar, pero con la particularidad de que solo puede acceder a la carpeta compartida y visualizarla entre los miembros asignados a dicha carpeta. Por lo tanto, también tiene acceso al servicio de FTP y al servicio de Gmail, lo que le permite interactuar y gestionar recursos dentro de estos servicios de manera eficiente.</string>
+    <string name="cambiar_lenguaje">Cambiar lenguaje</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="atras">Atras</string>
 </resources>

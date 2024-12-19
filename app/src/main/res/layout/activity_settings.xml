@@ -16,14 +16,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="@string/ajustes"
             android:textSize="28sp"
             android:textColor="#3E50B4">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NetOrange"
+            android:text="@string/netorange"
             android:textSize="28sp"
             android:layout_marginStart="100dp"
             android:textStyle="bold"
@@ -43,7 +43,7 @@
             android:id="@+id/txtChangeLanguage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change Language"
+            android:text="@string/cambiar_lenguaje"
             android:layout_marginTop="20dp"
             android:textSize="22dp"
             android:textStyle="bold">
@@ -53,23 +53,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
         </Switch>
-        <TextView
-            android:id="@+id/txtChangeMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Change Mode"
-            android:layout_marginTop="20dp"
-            android:textSize="22dp"
-            android:textStyle="bold">
-        </TextView>
-        <Switch
-            android:id="@+id/modeSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </Switch>
+
         <Button
             android:id="@+id/btnBack"
-            android:text="Back"
+            android:text="@string/atras"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#fb962b"
