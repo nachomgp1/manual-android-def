@@ -41,5 +41,9 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(libs.postgresql)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson) // Para convertir JSON a objetos Java
+    implementation (libs.gson)
+
 
 }

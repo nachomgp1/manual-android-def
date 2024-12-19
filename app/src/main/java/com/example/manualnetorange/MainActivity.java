@@ -23,6 +23,10 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Locale;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     RelativeLayout mainLayout;
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button login_btn;
     Button exit_btn;
     Settings settings = new Settings();
+    int contadorFallos = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Events
         login_btn.setOnClickListener(this);
         exit_btn.setOnClickListener(this);
-
     }
 
     @Override
@@ -70,25 +74,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String username = edit_txt_username.getText().toString();
         String password = edit_txt_password.getText().toString();
 
-        if (id == login_btn.getId()) {
-
-            OpenMainMenu(username);
+        if (id == login_btn.getId()){
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(MainActivity.this, "Por favor ingresa un dato", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            verifyData(username, password);
+        }else if (id == exit_btn.getId()){
+            finishAffinity();
         }
     }
+    private void verifyData(String name, String password) {
+        ApiService apiService = RetrofitClient.getRetrofitInstance().create(ApiService.class);
 
-    public void ValidateUser(String username, String password) throws SQLException {
+        // Crear el DTO de la solicitud
+        VerifyRequest request = new VerifyRequest(name, password);
 
-        try {
-            boolean isValid = Users.ValidateCredentials(username, password);
+        // Llamar al método verifyData
+        Call<VerifyResponse> call = apiService.verifyData(request);
 
-            if (isValid) {
-                OpenMainMenu(username);
-            } else {
-                Toast.makeText(MainActivity.this, "Invalid user or password", Toast.LENGTH_SHORT).show();
+        // Manejar la respuesta
+        call.enqueue(new Callback<VerifyResponse>() {
+            @Override
+            public void onResponse(Call<VerifyResponse> call, Response<VerifyResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    if (response.body().isSuccess()) {
+                        Toast.makeText(MainActivity.this, "Datos verificados correctamente", Toast.LENGTH_SHORT).show();
+                        OpenMainMenu(name);
+                    }
+                } else {
+                    contadorFallos ++;
+                    if (contadorFallos == 3){
+                        finishAffinity();
+                        Toast.makeText(MainActivity.this, "Cerrando: numero de fallos alcanzado", Toast.LENGTH_SHORT).show();
+                    }
+                    Toast.makeText(MainActivity.this, "Error: Usuario o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
+                }
             }
-        } catch (SQLException e) {
-            Toast.makeText(MainActivity.this, "Error with database", Toast.LENGTH_SHORT).show();
-        }
+            @Override
+            public void onFailure(Call<VerifyResponse> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Error de conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void OpenMainMenu(String username) {
@@ -96,6 +123,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("username", username);
         startActivity(intent);
     }
-
-
 }
