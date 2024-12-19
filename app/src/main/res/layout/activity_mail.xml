@@ -19,6 +19,7 @@
             android:id="@+id/btnBack"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:src="@drawable/turnback"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/volver_atr_s"/>
 

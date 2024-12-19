@@ -29,7 +29,9 @@
         <activity android:name=".ViewStandardUser" />
         <activity android:name=".ViewFtpServer" />
         <activity android:name=".ViewEmail" />
+        <activity android:name=".ViewGestion" />
         <activity android:name=".Settings" />
+        <activity android:name=".ViewAdmin" />
 
 
 

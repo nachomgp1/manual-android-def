@@ -37,8 +37,8 @@
     <string name="en_la_bandeja_de_entrada_al_acceder_a_la_opci_n_enviar_mail_encontrar_s_los_campos_necesarios_para_completar_el_env_o_de_un_mensaje_el_campo_para_corresponde_al_destinatario_del_correo_quien_debe_estar_incluido_en_la_lista_blanca_whitelist_tambi_n_es_imprescindible_rellenar_el_asunto_y_el_mensaje_adem_s_al_pulsar_el_bot_n_adjuntar_archivo_se_abrir_el_explorador_de_carpetas_para_que_selecciones_los_archivos_que_deseas_enviar_sin_embargo_es_importante_tener_en_cuenta_que_el_tama_o_total_de_los_archivos_no_debe_superar_los_10_mb_ni_ning_n_archivo_individual_puede_exceder_este_l_mite">En la bandeja de entrada, al acceder a la opción Enviar Mail, encontrarás los campos necesarios para completar el envío de un mensaje. El campo Para corresponde al destinatario del correo, quien debe estar incluido en la lista blanca (whitelist). También es imprescindible rellenar el asunto y el mensaje. Además, al pulsar el botón Adjuntar archivo, se abrirá el explorador de carpetas para que selecciones los archivos que deseas enviar; sin embargo, es importante tener en cuenta que el tamaño total de los archivos no debe superar los 10 MB, ni ningún archivo individual puede exceder este límite.</string>
     <string name="_2024_netorange_protected_rights">2024 NetOrange protected rights</string>
     <string name="gestion_usuarios">Gestion Usuarios</string>
-    <string name="email_managment">EMAIL MANAGMENT</string>
-    <string name="ftp_server">FTP SERVER</string>
+    <string name="email_managment">Gestion de email</string>
+    <string name="ftp_server">Servidor FTP</string>
     <string name="admin_user">Admin User</string>
     <string name="el_usuario_administrador_adem_s_de_contar_con_funciones_relacionadas_con_ftp_y_correo_posee_una_caracter_stica_destacada_la_gesti_n_integral_de_usuarios_esta_funci_n_le_permite_realizar_diversas_operaciones_como_crear_nuevos_usuarios_eliminarlos_y_modificar_los_l_mites_de_uso_de_los_servicios_de_correo_o_ftp_garantizando_un_control_completo_y_eficiente">El usuario administrador, además de contar con funciones relacionadas con FTP y correo, posee una característica destacada: la gestión integral de usuarios. Esta función le permite realizar diversas operaciones, como crear nuevos usuarios, eliminarlos, y modificar los límites de uso de los servicios de correo o FTP, garantizando un control completo y eficiente.</string>
     <string name="_2024_netorange_protected_rigths">2024 NetOrange protected rigths</string>
@@ -46,8 +46,8 @@
     <string name="standar_user">Usuario estandar</string>
     <string name="exit">Salir</string>
     <string name="settings">Ajustes</string>
-    <string name="administrator">ADMINISTRADOR</string>
-    <string name="group_user">GROUP USER</string>
+    <string name="administrator">Administrador</string>
+    <string name="group_user">Group User</string>
     <string name="logged_user">Usuario registrado:</string>
     <string name="user_manual">manual de usuario</string>
     <string name="netorange">NetOrange</string>

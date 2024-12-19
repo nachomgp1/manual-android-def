@@ -16,7 +16,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
     TextView logLabel;
     Button standardUserButton;
     Button btnSettings;
-
+    Button btnAdmin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         btnSettings = findViewById(R.id.btnSection4);
         btnSettings.setId(View.generateViewId());
         btnSettings.setOnClickListener(this);
+
+        btnAdmin =findViewById(R.id.btnSection3);
+        btnAdmin.setId(View.generateViewId());
+        btnAdmin.setOnClickListener(this);
     }
 
     @Override
@@ -50,9 +54,16 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         }
         else if(id == btnSettings.getId()){
             OpenSettingView();
+        }else if(id==btnAdmin.getId()){
+            OpenAdminView();
         }
     }
 
+    private void OpenAdminView() {
+        Intent intent = new Intent(MainMenu.this, ViewAdmin.class);
+        startActivity(intent);
+        finish();
+    }
 
 
     private void OpenStandarUserView() {
