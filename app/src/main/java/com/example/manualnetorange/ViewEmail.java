@@ -13,6 +13,7 @@ public class ViewEmail extends AppCompatActivity implements View.OnClickListener
 
     RelativeLayout mainLayout;
     ImageButton btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

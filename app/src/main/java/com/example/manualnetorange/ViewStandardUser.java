@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -14,7 +15,7 @@ public class ViewStandardUser extends AppCompatActivity implements View.OnClickL
     RelativeLayout mainLayout;
     Button btnFtpServer;
     Button btnEmail;
-    Button btnback;
+    ImageButton btnback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

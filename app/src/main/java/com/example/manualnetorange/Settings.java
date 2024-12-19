@@ -21,13 +21,13 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
     RelativeLayout mainLayout;
     Button btnBack;
     Switch languageSwitch;
-    Switch themeSwitch;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_settings);
 
         mainLayout = findViewById(R.id.mainLayoutSettings);
@@ -45,19 +45,18 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
 
         languageSwitch.setOnCheckedChangeListener(this);
 
+        //themeSwitch = findViewById(R.id.modeSwitch);
+        //themeSwitch.setId(View.generateViewId());
 
-
-
-
-
-
+        //themeSwitch.setChecked(isDarkModeEnabled());
+        //themeSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> toggleDarkMode(isChecked));
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
 
-        if(id == btnBack.getId()){
+        if (id == btnBack.getId()) {
             GoBack();
         }
     }
@@ -65,12 +64,11 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-        if(isChecked){
+        if (isChecked) {
 
             saveLanguageCode("en");
             SetLocale("en");
-        }
-        else{
+        } else {
             //Default
             saveLanguageCode("es");
             SetLocale("es");
@@ -83,7 +81,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
         finish();
     }
 
-    private void SetLocale(String languageApp){
+    private void SetLocale(String languageApp) {
         Locale locale = new Locale(languageApp);
         Locale.setDefault(locale);
 
@@ -98,14 +96,29 @@ public class Settings extends AppCompatActivity implements View.OnClickListener,
 
     }
 
-    private void saveLanguageCode(String languageApp){
+    private void saveLanguageCode(String languageApp) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.edit().putString("language", languageApp).apply();
     }
 
-    public String getSavedLanguageCode(){
+    public String getSavedLanguageCode() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         return prefs.getString("language", "es");
+    }
+
+    public boolean isDarkModeEnabled() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        return prefs.getBoolean("dark_mode", false);
+    }
+
+    private void toggleDarkMode(boolean isEnbaled) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        prefs.edit().putBoolean("dark_mode", isEnbaled).apply();
+
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+
     }
 
 

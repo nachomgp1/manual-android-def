@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-
-
         //Layouts
         mainLayout = findViewById(R.id.mainLayot);
         credentialsLayout = findViewById(R.id.credentialsLayout);
@@ -78,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void ValidateUser (String username, String password) throws SQLException {
+    public void ValidateUser(String username, String password) throws SQLException {
 
         try {
             boolean isValid = Users.ValidateCredentials(username, password);
@@ -93,13 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void OpenMainMenu (String username){
+    public void OpenMainMenu(String username) {
         Intent intent = new Intent(MainActivity.this, MainMenu.class);
         intent.putExtra("username", username);
         startActivity(intent);
     }
-
-
 
 
 }

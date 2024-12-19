@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.ManualNetOrange" parent="Base.Theme.ManualNetOrange" />
+
+    <style name="Theme.App.Light" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="Theme.App.Dark" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+    </style>
+
+
+
 </resources>
